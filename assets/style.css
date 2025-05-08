@@ -16,6 +16,21 @@ h1, h2 {
     color: #fff200;
 }
 
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #fff200;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6d700;
+}
+
 .section {
     margin-bottom: 20px;
 }
@@ -24,6 +39,11 @@ h1, h2 {
     border-bottom: 2px solid #fff200;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.section-title:hover {
+  text-decoration: underline;
 }
 
 .profile-img {
