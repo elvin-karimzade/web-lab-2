@@ -5,17 +5,17 @@
     <title>CV - Elvin Kərimzadə</title>
     <style>
         body {
-               font-family: Arial, sans-serif;
-               max-width: 800px;
-               margin: 0 auto;
-               padding: 20px;
-               background-image: url('./assets/bg.gif'); 
-               background-size: cover;          
-               background-repeat: no-repeat;    
-               background-position: center;     
-               background-color: black;        
-               color: #ffffcc;                  
-}
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('./assets/bg.gif'); 
+            background-size: cover;          
+            background-repeat: no-repeat;    
+            background-position: center;     
+            background-color: black;        
+            color: #ffffcc;                  
+        }
 
         h1, h2 {
             color: #fff200;
@@ -52,6 +52,26 @@
 
         .contact-info p {
             margin: 4px 0;
+        }
+
+        .download-buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .download-buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #fff200;
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .download-buttons button:hover {
+            background-color: #e6d700;
         }
     </style>
 </head>
@@ -101,6 +121,23 @@
             <li>Web Application Penetration Testing</li>
         </ul>
     </div>
+    
+    <div class="download-buttons">
+        <button onclick="downloadFile('./documents/cv-pdf.pdf', 'CV PDF olaraq endirilir...')">PDF Yüklə</button>
+        <button onclick="downloadFile('./documents/cv-jpg.jpg', 'CV JPG olaraq endirilir...')">JPG Yüklə</button>
+    </div>
+
+    <script>
+        function downloadFile(url, message) {
+            alert(message);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = '';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 
 </body>
 </html>
