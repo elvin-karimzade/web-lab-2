@@ -1,67 +1,103 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>CV - Elvin Kərimzadə</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+  <meta charset="UTF-8">
+  <title>Elvin Kərimzadə</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
+  <div class="container">
+    <div class="left-column">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
 
-  <div class="header">
-    <img src="./assets/profil.jpg" alt="Profil Şəkli" class="profile-img" />
-    <div class="contact-info">
+      <div class="section">
+        <h2 class="left-header">Contact</h2>
+        <div class="section-content">
+          <ul class="contact-list">
+            <li>📞 +994-99-307-12-04</li>
+            <li>✉️ elvin.karimzade@gmail.com</li>
+            <li>📍 Bakı, Azərbaycan</li>
+          </ul>
+        </div>
+        <label for="addContact">Əlaqə əlavə et: </label>
+        <input type="text" id="addContact" name="addContact" placeholder="+XXXXXXXXXXXX">
+      </div>
+
+      <div class="section">
+        <h2 class="left-header">Təhsil</h2>
+        <div class="section-content">
+          <ul class="education-list">
+            <li>
+              <strong>2024-2028</strong><br>İnformasiya təhlükəsizliyi ixtisası<br>Azərbaycan Texniki Universiteti
+            </li>
+          </ul>
+        </div>
+        <label for="addEducation">Təhsil əlavə et: </label>
+        <input type="text" id="addEducation" name="addEducation" placeholder="Təhsil əlavə et">
+      </div>
+
+      <div class="section">
+        <h2 class="left-header">Bacarıqlar</h2>
+        <div class="section-content">
+          <ul class="skills-list">
+            <li>Proqramlaşdırma dili: Bash, Python, VB.net, Arduino, C++</li>
+            <li>İOT : Ağıllı Ev qurulması, BADUSB, Phishing on esp32</li>
+            <li>IT : HelpDesk, Network, Linux, Windows, WEB Security, AD</li>
+            <li>Əməliyyat Sistemləri : Windows, Linux</li>
+            <li>Şəxsi bacarıqlar : Komanda ilə işləmə, CTF həll etmə, Ətraflı və Məntiqi düşünmə</li>
+          </ul>
+        </div>
+        <label for="addSkill">Bacarıq əlavə et: </label>
+        <input type="text" id="addSkill" name="addSkill" placeholder="Bacarıq əlavə et">
+      </div>
+
+      <div class="section">
+        <h2 class="left-header">Dillər</h2>
+        <div class="section-content">
+          <ul class="languages-list">
+           <li>Azərbaycan (Ana dili)</li>
+           <li>İngilis (B1)</li>
+           <li>Rus (A1)</li>
+           <li>Alman (A1)</li>
+          </ul>
+        </div>
+        <label for="addLang">Dil əlavə et: </label>
+        <input type="text" id="addLang" name="addLang" placeholder="Dil əlavə et">
+      </div>
+    </div>
+
+    <div class="right-column">
       <h1>Elvin Kərimzadə</h1>
-      <p><strong>Telefon:</strong> +994 99 307 12 04</p>
-      <p><strong>Email:</strong> elvin.karimzade@gmail.com</p>
-      <p><strong>Ünvan:</strong> Bakı, Azərbaycan</p>
-    </div>
-  </div>
+      <h2 id="position">Penetration Tester</h2>
 
-  <div class="section">
-    <h2 class="section-title" onclick="toggleSection('about')">Haqqımda</h2>
-    <div id="about">
-      <p>Məsuliyyətli və yaradıcı bir şəxsəm. Komandada işləməyi, CTF-lərlə işləməyi və yeni texnologiyalar öyrənməyi sevirəm.</p>
-    </div>
-  </div>
+      <h2>Profile</h2>
+      <p>Salam, hörmətli HR komandası, mən Kərimzadə Elvin bu məktubu sizin mərkəzdə işləmək üçün yazıram. İlk öncə özüm haqqında danışmaq istəyirəm. Mən 9 yaşımdan İT və IoT sahəsində özümü inkişaf etdirirəm.
+Hazırda özümü kibertəhlükəsizliyin qırmızı komanda sahəsində inkişaf etdirirəm. Bu sahədə əsas səviyyədə Network, Helpdesk, Web, Linux və Windows biliklərinə sahibim. Hazırda mən TryHackMe.I ilə işləyirəm. O vaxtkı məqsədim “Tryhackme-də Azərbaycanda ilk 50-liyə daxil olmaq” indi realdır.
+Hazırda TryHackMe-də "CyberSecurity 101","Web Fundamentals","Jr.Penetration Tester" Sertifikatları əldə etmişəm. Eyni zamanda Arduino,Vb.Net, Python və C++ proqramlaşdırma dillərini baza səviyyədə bilirəm.
+Universitetə ​​qəbul olandan sonra qardaşım Kərimzadə Möhlət sizinlə işləməyi məsləhət gördü. Və onun burada öyrəndiklərini və karyera həyatında nələrə nail olduğunu gördüm. Bu isə məndə böyük maraq doğurdu və başa düşdüm ki, karyerama böyük töhfə verəcək. 
+CV-mi oxuduğunuz üçün təşəkkür edirəm</p>
 
-  <div class="section">
-    <h2 class="section-title" onclick="toggleSection('education')">Təhsil</h2>
-    <div id="education">
-      <ul id="education-list">
-        <li><strong>Azərbaycan Texniki Universiteti</strong> – İnformasiya Təhlükəsizliyi (2024 - 2028)</li>
+      <h2>Sertifikatlar</h2>
+      <ul>
+        <li>TryHackMe : Hackfinity Battle CTF (08.04.2025)</li>
+        <li>TryHackMe : Junior Penetration Tester (16.03.2025)</li>
+        <li>TryHackMe : WEB Fundamentals (14.03.2025)</li>
+        <li>TryHackMe : Complete Beginner (14.03.2025)</li>
+        <li>TryHackMe : CyberSecurity 101 (28.02.2025)</li>
+        <li>TryHackMe : Presecurity (02.11.2024)</li>
+        <li>TryHackMe : Introduction to CyberSecurity (02.11.2024)</li>
       </ul>
-      <button onclick="addEducation()">Təhsil əlavə et</button>
+
+      <h2>TryHackMe Profilim</h2>
+      <p>Azərbaycan üzrə ilk 50 :
+        🌐 <a href="https://tryhackme.com/p/elvin.2007" target="_blank">tryhackme.com/p/elvin.2007</a>
+      </p>
+      <h2>Linkedin Profilim</h2>
+      <p>
+        🌐 <a href="https://www.linkedin.com/in/elvin-karimzade2007/" target="_blank">www.linkedin.com/in/elvin-karimzade2007/</a>
+      </p>
     </div>
   </div>
-
-  <div class="section">
-    <h2 class="section-title" onclick="toggleSection('experience')">İş Təcrübəsi</h2>
-    <div id="experience">
-      <ul id="experience-list">
-        <li><strong>Web Developer</strong> – Azərbaycan Texniki Universiteti (2024 - Hal-hazırda)</li>
-      </ul>
-      <button onclick="addExperience()">Təcrübə əlavə et</button>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title" onclick="toggleSection('skills')">Bacarıqlar</h2>
-    <div id="skills">
-      <ul id="skills-list">
-        <li>HTML / CSS</li>
-        <li>JavaScript</li>
-        <li>Python əsasları</li>
-        <li>Git və GitHub</li>
-      </ul>
-      <button onclick="addSkill()">Bacarıq əlavə et</button>
-    </div>
-  </div>
-
-  <div class="download-buttons">
-    <button onclick="downloadFile('./documents/cv-pdf.pdf', 'CV PDF endirilir...')">PDF Yüklə</button>
-    <button onclick="downloadFile('./documents/cv-jpg.jpg', 'CV JPG endirilir...')">JPG Yüklə</button>
-  </div>
-
-  <script src="./assets/script.js"></script>
 </body>
 </html>

@@ -1,32 +1,37 @@
-// script.js
-function downloadFile(url, message) {
-    alert(message);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = '';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-function toggleSection(id) {
-  const section = document.getElementById(id);
-  section.style.display = section.style.display === 'none' ? 'block' : 'none';
-}
+const headers = document.querySelectorAll('.left-header');
 
-function addEducation() {
-  const input = prompt("Yeni təhsil məlumatını daxil edin:");
-  if (input) {
-    const li = document.createElement('li');
-    li.textContent = input;
-    document.getElementById('education-list').appendChild(li);
-  }
-}
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    if (content && content.classList.contains('section-content')) {
+      content.classList.toggle('active');
+    }
+  });
+});
 
-function addExperience() {
-  const input = prompt("Yeni təcrübəni daxil edin:");
-  if (input) {
-    const li = document.createElement('li');
-    li.textContent = input;
-    document.getElementById('experience-list').appendChild(li);
-  }
-}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const inputs = [
+      { inputId: 'addContact', listClass: 'contact-list' },
+      { inputId: 'addEducation', listClass: 'education-list' },
+      { inputId: 'addSkill', listClass: 'skills-list' },
+      { inputId: 'addLang', listClass: 'languages-list' }
+    ];
+  
+    for (let index = 0; index < inputs.length; index++) {
+        const inputId = inputs[index].inputId
+        const listClass = inputs[index].listClass
+        const input = document.getElementById(inputId);
+        const list = document.querySelector(`.${listClass}`);
+    
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && input.value.trim() !== '') {
+            const newItem = document.createElement('li');
+            newItem.textContent = input.value.trim();
+            list.appendChild(newItem);
+            input.value = '';
+          }
+        });
+    }
+  });
+  
