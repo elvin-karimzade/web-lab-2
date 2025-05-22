@@ -5,4 +5,4 @@ Bu laboratoriyada nələr etdim?
  
  - Tələblərə və oxunaqlığı artırmaq üçün index.html kodumdan javascript və css-i ayırıb external etdim.
  - Faylları qovluqlar ilə daha anlaşıqlı sıraladım.
- - Tələb olaraq dinamik hərəkətlər, açılıb bağlanan paraqraflar(kursorun dəyişməsi), alert qutusu, yeni sətir əlavə etmək üçün düymələr əlavə etdim. Bunları əlavə edərkən qıraq mənbələrdən araşdırıb, öyrənib kömək aldım.
+ - Tələblərdən  dinamik hərəkət kimi açılıb bağlanan paraqraflar(Əlaqə, Təhsil, Bacarıqlar, Dillər), yeni sətir əlavə etmək üçün textbox əlavə etdim. Bunları əlavə edərkən qıraq mənbələrdən araşdırıb, öyrənib kömək aldım.
